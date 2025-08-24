@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bagus Corp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-2xl font-bold text-blue-600">MBTCorp</span>
+        </div>
+        <!-- Menu (desktop) -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+          <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
+          <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+        <!-- Button Mobile -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Menu (mobile) -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+      <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Selamat Datang di Website Kami 🚀</h1>
+      <p class="text-lg md:text-xl mb-8 text-gray-200">Solusi modern dan inovatif untuk kebutuhan digital Anda.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex justify-center gap-4">
+
+        <!-- Button Mulai Sekarang -->
+        <a id="kontenBtn"
+          class="w-full sm:w-auto px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100 text-center">
+          Have Fun
+        </a>
+
+        <!-- Button LinkedIn -->
+        <a href="https://id.linkedin.com/in/moh-bagus-taqwillah-87752b237" target="_blank"
+          class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-transparent border border-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 text-center">
+          <!-- LinkedIn Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5 fill-current">
+            <path
+              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.8 53.8 0 11107.59 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.4V304.1c0-34.3-.7-78.4-47.8-78.4-47.8 0-55.1 37.3-55.1 75.9V448h-92.4V148.9h88.7v40.8h1.3c12.3-23.3 42.3-47.8 87-47.8 93 0 110.1 61.2 110.1 140.7V448z" />
+          </svg>
+          My Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave Divider -->
+  <div class="bg-gray-100 -mt-[5px]">
+    <svg class="block w-full" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+      aria-hidden="true">
+      <defs>
+        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#2563eb" /> <!-- from-blue-600 -->
+          <stop offset="100%" stop-color="#4338ca" /> <!-- to-indigo-700 -->
+        </linearGradient>
+      </defs>
+      <path fill="url(#waveGradient)"
+        d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,117.3C672,117,768,75,864,64C960,53,1056,75,1152,85.3C1248,96,1344,96,1392,96L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" />
+    </svg>
+  </div>
+
+
+  <!-- Content after wave -->
+  <section id="services" class="bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold mb-4">Layanan Kami</h2>
+      <p class="text-gray-600 mb-8">Kami Juga dapat membantu anda dalam berbagai bidang.</p>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="service-card bg-gray-50 border rounded-2xl p-6 shadow-xl hover:shadow-2xl transition">
+          <h3 class="font-semibold text-lg mb-2">Landing Page UI/UX</h3>
+          <p class="text-gray-600">Desain modern dan konsisten untuk company profile anda.</p>
+        </div>
+        <div class="service-card bg-gray-50 border rounded-2xl p-6 shadow-xl hover:shadow-2xl transition">
+          <h3 class="font-semibold text-lg mb-2">Pengembangan Web</h3>
+          <p class="text-gray-600">Stack fleksibel untuk kebutuhan bisnis kamu.</p>
+        </div>
+        <div class="service-card bg-gray-50 border rounded-2xl p-6 shadow-xl hover:shadow-2xl transition">
+          <h3 class="font-semibold text-lg mb-2">Management Database</h3>
+          <p class="text-gray-600">Merancang structure database sesuai dengan flow bisnis anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Garis pembatas antar section -->
+  <div class="w-1/2 mx-auto border-t-4 border-blue-600 my-12 relative">
+  </div>
+  <!-- New Section: Teknikal Analyst, Programming, Architecture Database -->
+  <section id="expertise" class="bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold mb-4">Konten Pembelajaran</h2>
+      <p class="text-gray-600 mb-12">Kumpulan materi terstruktur mulai dari konsep dasar, penjelasan mendalam, hingga latihan praktis untuk mendukung proses belajar Anda.</p>
+
+      <div class="grid gap-8 md:grid-cols-4">
+
+        <!-- Teknikal Analyst Trading -->
+        <div  onclick="showComingSoon()" 
+          class="bg-white border  border-black/50 rounded-2xl p-6 shadow-xl hover:shadow-lg transition transform hover:scale-105">
+          <img src="img/trading.jpg" alt="Teknikal Analyst Trading" class="h-40 mx-auto mb-6">
+          <h3 class="font-semibold text-xl mb-2 text-center">Teknikal Analyst Trading</h3>
+          <p class="text-gray-600 text-center">
+            Analisis teknikal pasar dengan indikator modern untuk mendukung keputusan trading.
+          </p>
+        </div>
+
+
+        <!-- Programming -->
+        <div  onclick="showComingSoon()" 
+          class="bg-white border border-black/50 rounded-2xl p-6 shadow-xl hover:shadow-lg transition transform hover:scale-105">
+          <img src="img/programming.avif" alt="Programming" class="h-40 mx-auto mb-6">
+          <h3 class="font-semibold text-xl mb-2 text-center">Programming</h3>
+          <p class="text-gray-600 text-center">
+            Pengembangan aplikasi dengan berbagai bahasa pemrograman dan framework terkini.
+          </p>
+        </div>
+
+        <!-- Architecture Database -->
+        <div  onclick="showComingSoon()" 
+          class="bg-white border border-black/50 rounded-2xl p-6 shadow-xl hover:shadow-lg transition transform hover:scale-105">
+          <img src="img/database.png" alt="Architecture Database" class="h-40 mx-auto mb-6">
+          <h3 class="font-semibold text-xl mb-2 text-center">Architecture Database</h3>
+          <p class="text-gray-600 text-center">
+            Perancangan arsitektur database yang scalable, efisien, dan aman.
+          </p>
+        </div>
+
+        <!-- AI -->
+        <!-- Programming -->
+        <div  onclick="showComingSoon()" 
+          class="bg-white border border-black/50 rounded-2xl p-6 shadow-xl hover:shadow-lg transition transform hover:scale-105">
+          <img src="img/n8n.jpg" alt="Programming" class="h-40 mx-auto mb-6">
+          <h3 class="font-semibold text-xl mb-2 text-center">Automation Workflow AI</h3>
+          <p class="text-gray-600 text-center">
+            Pengembangan flow Automation n8n.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer (optional) with inverse wave on top -->
+  <footer id="contact" class="bg-gray-900 text-gray-200">
+    <!-- Inverse wave to separate from previous section -->
+    <svg class="block w-full" viewBox="0 0 1440 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+      aria-hidden="true">
+      <path fill="#ffffff"
+        d="M0,64L48,53.3C96,43,192,21,288,26.7C384,32,480,64,576,80C672,96,768,96,864,85.3C960,75,1056,53,1152,48C1248,43,1344,53,1392,58.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" />
+    </svg>
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <div class="grid gap-8 md:grid-cols-3">
+        <div>
+          <h4 class="font-semibold text-lg mb-2">Kontak</h4>
+          <p class="text-gray-400">email@baguscorp.com</p>
+          <p class="text-gray-400">+62 812 3456 7890</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg mb-2">Ikuti Kami</h4>
+          <div class="flex gap-4 text-gray-400">
+            <a href="#" class="hover:text-white">Twitter</a>
+            <a href="#" class="hover:text-white">Instagram</a>
+            <a href="#" class="hover:text-white">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-10 text-sm text-gray-500">© 2025 Bagus Corp. All rights reserved.</p>
+    </div>
+  </footer>
+    <!-- Container untuk ucapan -->
+  <div id="ucapan"
+    class="fixed inset-0 flex items-center justify-center bg-black/50 hidden z-50">
+    <div class="bg-white p-6 rounded-2xl shadow-lg text-center max-w-md">
+      <h2 id="ucapanText" class="text-2xl font-bold text-pink-600"></h2>
+      <div class="mt-4">
+        <button id="nextBtn"
+          class="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+          👉 Next
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
