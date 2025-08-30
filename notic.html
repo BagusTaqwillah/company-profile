@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTIC - Nol Tiga Community</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-jQjWZp6N...==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ffffff !important;
+    /* warna putih */
+  }
+</style>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="absolute top-0 left-0 w-full z-50 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-white">NOTIC</h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 font-medium text-white">
+        <li><a href="#home" class="hover:text-blue-200">Home</a></li>
+        <li><a href="#kegiatan" class="hover:text-blue-200">Kegiatan</a></li>
+        <li><a href="#donasi" class="hover:text-blue-200">Donasi</a></li>
+      </ul>
+
+      <!-- Mobile Button -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col bg-black/70 text-white px-6 py-4 space-y-4 md:hidden">
+      <a href="#home" class="block">Home</a>
+      <a href="#kegiatan" class="block">Kegiatan</a>
+      <a href="#donasi" class="block">Donasi</a>
+    </div>
+  </nav>
+
+  <!-- Jumbotron / Slider -->
+  <section id="home" class="h-[70vh] md:h-[80vh]">
+    <div class="swiper h-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative flex items-center justify-center bg-cover bg-center"
+          style="background-image: url('https://picsum.photos/1600/800?random=11');">
+
+          <!-- Overlay -->
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <!-- Text -->
+          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg">
+            Selamat Datang di Komunitas NOTIC
+          </h2>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative flex items-center justify-center bg-cover bg-center"
+          style="background-image: url('https://picsum.photos/1600/800?random=12');">
+
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg">
+            Bersama Membangun Komunitas
+          </h2>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative flex items-center justify-center bg-cover bg-center"
+          style="background-image: url('https://picsum.photos/1600/800?random=13');">
+
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg">
+            Aksi Nyata untuk Sosial
+          </h2>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev hidden md:flex"></div>
+      <div class="swiper-button-next hidden md:flex"></div>
+    </div>
+  </section>
+
+  <!-- Kegiatan -->
+  <section id="kegiatan" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-10">Kegiatan Kami</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-2xl shadow-md">
+          <img src="https://picsum.photos/400/200?random=1" class="rounded-xl mb-4 w-full" alt="">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Kerja Bakti</h3>
+          <p class="text-gray-600 text-sm md:text-base">
+            Kegiatan bersama warga untuk membersihkan lingkungan, memperbaiki fasilitas umum, dan menjaga kebersihan
+            serta kerapihan lingkungan sekitar.
+          </p>
+
+        </div>
+        <div class="bg-gray-100 p-6 rounded-2xl shadow-md">
+          <img src="https://picsum.photos/400/200?random=2" class="rounded-xl mb-4 w-full" alt="">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Musyawarah</h3>
+          <p class="text-gray-600 text-sm md:text-base">
+            Kegiatan bersama warga untuk berdiskusi dan mengambil keputusan secara musyawarah demi kepentingan
+            komunitas.
+          </p>
+
+        </div>
+        <div class="bg-gray-100 p-6 rounded-2xl shadow-md">
+          <img src="https://picsum.photos/400/200?random=3" class="rounded-xl mb-4 w-full" alt="">
+         <h3 class="text-lg md:text-xl font-semibold mb-2">Santunan</h3>
+<p class="text-gray-600 text-sm md:text-base">
+  Memberikan bantuan dan dukungan kepada anak yatim serta janda yang sudah lanjut usia, untuk meringankan beban mereka serta meningkatkan kesejahteraan sosial.
+</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donasi -->
+  <section id="donasi" class="py-20 bg-gradient-to-b from-blue-50 to-blue-100">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Dukung Kami dengan Donasi</h2>
+      <p class="text-gray-600 mb-12 text-sm md:text-base">Bantuan Anda sangat berarti untuk keberlangsungan kegiatan
+        kami.
+        Setiap kontribusi membantu kami mewujudkan aksi nyata untuk komunitas.</p>
+
+      <div
+        class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 inline-block w-full md:w-80">
+        <img src="https://stitmadani.ac.id/wp-content/uploads/2023/11/5.jpg" alt="BCA"
+          class="w-32 md:w-40 mx-auto mb-6">
+        <h3>Nomor Rekening :</h3>
+        <!-- No Rekening dengan copy icon -->
+        <div class="flex items-center justify-center mb-2 space-x-2">
+          <p class="text-lg font-bold" id="rekening">1234567890</p>
+          <button id="copyBtn" class="text-blue-600 hover:text-blue-800 transition text-xl">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+
+        <!-- Atas Nama -->
+        <p class="text-gray-600 font-bold">a.n. Ahmad Sururi</p>
+      </div>
+    </div>
+  </section>
+<!-- Tentang Kami -->
+<section id="tentang-kami" class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Tentang Kami</h2>
+    
+    <!-- Gambar komunitas dengan bounce kecil -->
+    <img src="img/notic.enc" 
+         alt="NOTIC Community" 
+         class="w-40 h-40 md:w-56 md:h-56 mx-auto mb-6 rounded-full object-cover border-4 border-blue-300 animate-bounce-small">
+
+    <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+      <span class="font-semibold">NOTIC (Nol Tiga Community)</span> adalah komunitas yang bergerak di bidang sosial
+      dan kemasyarakatan. Komunitas ini berlokasi di <span class="font-semibold">RT 03 RW 02, Desa Danasari, Kecamatan Bojong, Kabupaten Tegal</span>.
+      Kami berfokus pada kegiatan kemasyarakatan yang bertujuan meningkatkan solidaritas, kesejahteraan warga, serta kepedulian terhadap lingkungan sekitar.
+      Organisasi ini bersifat kekeluargaan, terbuka untuk semua warga, dan transparan dalam setiap kegiatannya.
+      Semua program yang dijalankan menekankan pada keberlanjutan, partisipasi aktif anggota, serta kontribusi nyata untuk masyarakat setempat.
+    </p>
+  </div>
+</section>
+
+<style>
+/* Bounce halus untuk gambar tanpa menutupi teks */
+@keyframes bounce-small {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-bounce-small {
+  animation: bounce-small 2s infinite;
+}
+</style>
+
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-b from-blue-50 to-blue-100 shadow-inner py-6 text-center">
+    <p class="text-gray-500 text-sm">&copy; 2025 NOTIC - Nol Tiga Community. All rights reserved.</p>
+  </footer>
+  <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    const copyBtn = document.getElementById('copyBtn');
+    const rekeningEl = document.getElementById('rekening');
+
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(rekeningEl.innerText).then(() => {
+        Swal.fire({
+          icon: 'success',
+          title: 'Berhasil di copy 👍',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      });
+    });
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000, // 5 detik
+        disableOnInteraction: false, // tetap jalan walau user geser manual
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // titik pagination bisa diklik
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+
+</html>
