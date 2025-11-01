@@ -4,13 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOTIC - Nol Tiga Community</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Swiper.js -->
+  <title>NOTIC - Nol Tiga Community</title> <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Swiper.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Font Awesome CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-jQjWZp6N...==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -18,201 +15,135 @@
   .swiper-button-next,
   .swiper-button-prev {
     color: #ffffff !important;
-    /* warna putih */
   }
 </style>
 
-<body class="bg-gray-50 text-gray-800">
-  <!-- Navbar -->
+<body class="bg-gray-50 text-gray-800"> <!-- Navbar -->
   <nav class="absolute top-0 left-0 w-full z-50 bg-transparent">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-white">NOTIC</h1>
-
-      <!-- Desktop Menu -->
+      <h1 class="text-2xl font-bold text-white">NOTIC</h1> <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6 font-medium text-white">
         <li><a href="#home" class="hover:text-blue-200">Home</a></li>
         <li><a href="#kegiatan" class="hover:text-blue-200">Kegiatan</a></li>
         <li><a href="#donasi" class="hover:text-blue-200">Donasi</a></li>
-      </ul>
-
-      <!-- Mobile Button -->
-      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-        ☰
-      </button>
+      </ul> <!-- Mobile Button --> <button id="menu-btn" class="md:hidden text-white focus:outline-none"> ☰ </button>
+    </div> <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col bg-black/70 text-white px-6 py-4 space-y-4 md:hidden"> <a href="#home"
+        class="block">Home</a> <a href="#kegiatan" class="block">Kegiatan</a> <a href="#donasi" class="block">Donasi</a>
     </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden flex-col bg-black/70 text-white px-6 py-4 space-y-4 md:hidden">
-      <a href="#home" class="block">Home</a>
-      <a href="#kegiatan" class="block">Kegiatan</a>
-      <a href="#donasi" class="block">Donasi</a>
-    </div>
-  </nav>
-
-  <!-- Jumbotron / Slider -->
+  </nav> <!-- Jumbotron / Slider -->
   <section id="home" class="h-[70vh] md:h-[80vh]">
     <div class="swiper h-full">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
+      <div class="swiper-wrapper"> <!-- Slide 1 -->
         <div class="swiper-slide relative flex items-center justify-center bg-cover bg-center"
-          style="background-image: url('3.jpg');">
-
-          <!-- Overlay -->
-          <div class="absolute inset-0 bg-black/50"></div>
-
-          <!-- Text -->
-          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg">
-            Selamat Datang di Komunitas NOTIC
-          </h2>
-        </div>
-
-        <!-- Slide 2 -->
+          style="background-image: url('3.jpg');"> <!-- Overlay -->
+          <div class="absolute inset-0 bg-black/50"></div> <!-- Text -->
+          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg"> Selamat
+            Datang di Komunitas NOTIC </h2>
+        </div> <!-- Slide 2 -->
         <div class="swiper-slide relative flex items-center justify-center bg-cover bg-center"
           style="background-image: url('https://picsum.photos/1600/800?random=12');">
-
           <div class="absolute inset-0 bg-black/50"></div>
-
-          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg">
-            Bersama Membangun Komunitas
-          </h2>
-        </div>
-
-        <!-- Slide 3 -->
+          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg"> Bersama
+            Membangun Komunitas </h2>
+        </div> <!-- Slide 3 -->
         <div class="swiper-slide relative flex items-center justify-center bg-cover bg-center"
           style="background-image: url('https://picsum.photos/1600/800?random=13');">
-
           <div class="absolute inset-0 bg-black/50"></div>
-
-          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg">
-            Aksi Nyata untuk Sosial
-          </h2>
+          <h2 class="relative text-white text-3xl md:text-5xl font-extrabold text-center px-6 drop-shadow-lg"> Aksi
+            Nyata untuk Sosial </h2>
         </div>
       </div>
-
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev hidden md:flex"></div>
       <div class="swiper-button-next hidden md:flex"></div>
     </div>
-  </section>
-
-  <!-- Kegiatan -->
+  </section> <!-- Kegiatan -->
   <section id="kegiatan" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold text-gray-800 mb-10">Kegiatan Kami</h2>
       <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <div class="bg-gray-100 p-6 rounded-2xl shadow-md">
-          <img src="https://picsum.photos/400/200?random=1" class="rounded-xl mb-4 w-full" alt="">
+        <div class="bg-gray-100 p-6 rounded-2xl shadow-md"> <img src="https://picsum.photos/400/200?random=1"
+            class="rounded-xl mb-4 w-full" alt="">
           <h3 class="text-lg md:text-xl font-semibold mb-2">Kerja Bakti</h3>
-          <p class="text-gray-600 text-sm md:text-base">
-            Kegiatan bersama warga untuk membersihkan lingkungan, memperbaiki fasilitas umum, dan menjaga kebersihan
-            serta kerapihan lingkungan sekitar.
-          </p>
-
+          <p class="text-gray-600 text-sm md:text-base"> Kegiatan bersama warga untuk membersihkan lingkungan,
+            memperbaiki fasilitas umum, dan menjaga kebersihan serta kerapihan lingkungan sekitar. </p>
         </div>
-        <div class="bg-gray-100 p-6 rounded-2xl shadow-md">
-          <img src="https://picsum.photos/400/200?random=2" class="rounded-xl mb-4 w-full" alt="">
+        <div class="bg-gray-100 p-6 rounded-2xl shadow-md"> <img src="https://picsum.photos/400/200?random=2"
+            class="rounded-xl mb-4 w-full" alt="">
           <h3 class="text-lg md:text-xl font-semibold mb-2">Musyawarah</h3>
-          <p class="text-gray-600 text-sm md:text-base">
-            Kegiatan bersama warga untuk berdiskusi dan mengambil keputusan secara musyawarah demi kepentingan
-            komunitas.
-          </p>
-
+          <p class="text-gray-600 text-sm md:text-base"> Kegiatan bersama warga untuk berdiskusi dan mengambil keputusan
+            secara musyawarah demi kepentingan komunitas. </p>
         </div>
-        <div class="bg-gray-100 p-6 rounded-2xl shadow-md">
-          <img src="https://picsum.photos/400/200?random=3" class="rounded-xl mb-4 w-full" alt="">
+        <div class="bg-gray-100 p-6 rounded-2xl shadow-md"> <img src="https://picsum.photos/400/200?random=3"
+            class="rounded-xl mb-4 w-full" alt="">
           <h3 class="text-lg md:text-xl font-semibold mb-2">Santunan</h3>
-          <p class="text-gray-600 text-sm md:text-base">
-            Memberikan bantuan dan dukungan kepada anak yatim serta janda yang sudah lanjut usia, untuk meringankan
-            beban mereka serta meningkatkan kesejahteraan sosial.
-          </p>
-
+          <p class="text-gray-600 text-sm md:text-base"> Memberikan bantuan dan dukungan kepada anak yatim serta janda
+            yang sudah lanjut usia, untuk meringankan beban mereka serta meningkatkan kesejahteraan sosial. </p>
+        </div> <button onclick="openModal()" class="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700"> View
+          Dokumentasi </button>
+      </div>
+    </div> <!-- Modal Dokumentasi -->
+    <div id="docModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
+      <div class="bg-white p-4 rounded-2xl max-w-3xl w-full relative"> <!-- Tombol Close --> <button
+          onclick="closeModal()"
+          class="absolute top-3 right-3 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl shadow z-50">
+          &times; </button> <!-- Swiper -->
+        <div class="swiper mySwiper relative z-0">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="1.jpg" class="rounded-xl w-full" /> </div>
+            <div class="swiper-slide"> <img src="2.jpg" class="rounded-xl w-full" /> </div>
+            <div class="swiper-slide"> <img src="https://picsum.photos/800/400?random=13" class="rounded-xl w-full" />
+            </div>
+          </div> <!-- Navigasi -->
+          <div class="swiper-next !text-blue-600 !font-bold z-40"></div>
+          <div class="swiper-prev !text-blue-600 !font-bold z-40"></div>
+          <div class="swiper-pagination-doc z-40"></div>
         </div>
-        <button onclick="openModal()" class="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700">
-          View Dokumentasi
-        </button>
       </div>
     </div>
-   <!-- Modal Dokumentasi -->
-<div id="docModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
-  <div class="bg-white p-4 rounded-2xl max-w-3xl w-full relative">
-    <!-- Tombol Close -->
-    <button onclick="closeModal()" 
-      class="absolute top-3 right-3 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl shadow z-50">
-      &times;
-    </button>
-
-    <!-- Swiper -->
-    <div class="swiper mySwiper relative z-0">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="1.jpg" class="rounded-xl w-full" />
-        </div>
-        <div class="swiper-slide">
-          <img src="2.jpg" class="rounded-xl w-full" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://picsum.photos/800/400?random=13" class="rounded-xl w-full" />
-        </div>
-      </div>
-
-      <!-- Navigasi -->
-      <div class="swiper-next !text-blue-600 !font-bold z-40"></div>
-      <div class="swiper-prev !text-blue-600 !font-bold z-40"></div>
-      <div class="swiper-pagination-doc z-40"></div>
-    </div>
-  </div>
-</div>
-
-  </section>
-
-  <!-- Donasi -->
+  </section> <!-- Donasi -->
   <section id="donasi" class="py-20 bg-gradient-to-b from-blue-50 to-blue-100">
     <div class="max-w-3xl mx-auto px-6 text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Dukung Kami dengan Donasi</h2>
       <p class="text-gray-600 mb-12 text-sm md:text-base">Bantuan Anda sangat berarti untuk keberlangsungan kegiatan
-        kami.
-        Setiap kontribusi membantu kami mewujudkan aksi nyata untuk komunitas.</p>
-
+        kami. Setiap kontribusi membantu kami mewujudkan aksi nyata untuk komunitas.</p>
       <div
         class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 inline-block w-full md:w-80">
         <img src="https://stitmadani.ac.id/wp-content/uploads/2023/11/5.jpg" alt="BCA"
           class="w-32 md:w-40 mx-auto mb-6">
-        <h3>Nomor Rekening :</h3>
-        <!-- No Rekening dengan copy icon -->
+        <h3>Nomor Rekening :</h3> <!-- No Rekening dengan copy icon -->
         <div class="flex items-center justify-center mb-2 space-x-2">
-          <p class="text-lg font-bold" id="rekening">5930810853</p>
-          <button id="copyBtn" class="text-blue-600 hover:text-blue-800 transition text-xl">
-            <i class="fas fa-copy"></i>
-          </button>
-        </div>
-
-        <!-- Atas Nama -->
+          <p class="text-lg font-bold" id="rekening">5930810853</p> <button id="copyBtn"
+            class="text-blue-600 hover:text-blue-800 transition text-xl"> <i class="fas fa-copy"></i> </button>
+        </div> <!-- Atas Nama -->
         <p class="text-gray-600 font-bold">a.n. Ahmad Sururi</p>
       </div>
     </div>
-  </section>
-  <!-- Tentang Kami -->
+  </section> <!-- Tentang Kami -->
   <section id="tentang-kami" class="py-20 bg-white">
     <div class="max-w-3xl mx-auto px-6 text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Tentang Kami</h2>
-
-      <!-- Gambar komunitas dengan bounce kecil -->
-      <img src="notic.png" alt="NOTIC Community"
+      <!-- Gambar komunitas dengan bounce kecil --> <img src="notic.png" alt="NOTIC Community"
         class="w-40 h-40 md:w-56 md:h-56 mx-auto mb-6 rounded-full object-cover border-4 border-blue-300 animate-bounce-small">
-
-      <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-        <span class="font-semibold">NOTIC (Nol Tiga Community)</span> adalah komunitas yang bergerak di bidang sosial
-        dan kemasyarakatan. Komunitas ini berlokasi di <span class="font-semibold">RT 03 RW 02, Desa Danasari, Kecamatan
-          Bojong, Kabupaten Tegal</span>.
-        Kami berfokus pada kegiatan kemasyarakatan yang bertujuan meningkatkan solidaritas, kesejahteraan warga, serta
-        kepedulian terhadap lingkungan sekitar.
-        Organisasi ini bersifat kekeluargaan, terbuka untuk semua warga, dan transparan dalam setiap kegiatannya.
-        Semua program yang dijalankan menekankan pada keberlanjutan, partisipasi aktif anggota, serta kontribusi nyata
-        untuk masyarakat setempat.
-      </p>
+      <p class="text-gray-600 text-sm md:text-base leading-relaxed"> <span class="font-semibold">NOTIC (Nol Tiga
+          Community)</span> adalah komunitas yang bergerak di bidang sosial dan kemasyarakatan. Komunitas ini berlokasi
+        di <span class="font-semibold">RT 03 RW 02, Desa Danasari, Kecamatan Bojong, Kabupaten Tegal</span>. Kami
+        berfokus pada kegiatan kemasyarakatan yang bertujuan meningkatkan solidaritas, kesejahteraan warga, serta
+        kepedulian terhadap lingkungan sekitar. Organisasi ini bersifat kekeluargaan, terbuka untuk semua warga, dan
+        transparan dalam setiap kegiatannya. Semua program yang dijalankan menekankan pada keberlanjutan, partisipasi
+        aktif anggota, serta kontribusi nyata untuk masyarakat setempat. </p>
     </div>
   </section>
-
+  <section class="py-20 bg-gradient-to-b from-blue-50 to-blue-100">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Lokasi</h2>
+      <div> <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5144.175753390115!2d109.190991580492!3d-7.117714035041644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fecac180d7569%3A0xb0367936f5028b5a!2sKebagusan%20Danasari%20bojong%20tegal!5e0!3m2!1sid!2sid!4v1762001958371!5m2!1sid!2sid"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+    </div>
+  </section>
   <style>
     /* Bounce halus untuk gambar tanpa menutupi teks */
     @keyframes bounce-small {
@@ -230,69 +161,105 @@
     .animate-bounce-small {
       animation: bounce-small 2s infinite;
     }
-  </style>
-
-
-  <!-- Footer -->
+  </style> <!-- Footer -->
   <footer class="bg-gradient-to-b from-blue-50 to-blue-100 shadow-inner py-6 text-center">
     <p class="text-gray-500 text-sm">&copy; 2025 NOTIC - Nol Tiga Community. All rights reserved.</p>
-  </footer>
-  <!-- SweetAlert2 CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </footer> <!-- SweetAlert2 CDN -->
+
+  <!-- Pastikan SweetAlert2 & Swiper sudah diload sebelum ini script -->
   <script>
-    const copyBtn = document.getElementById('copyBtn');
-    const rekeningEl = document.getElementById('rekening');
+    document.addEventListener("DOMContentLoaded", () => {
+      // --- Copy rekening dengan pengecekan dan fallback ---
+      const copyBtn = document.getElementById("copyBtn");
+      const rekeningEl = document.getElementById("rekening");
 
-    copyBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText(rekeningEl.innerText).then(() => {
-        Swal.fire({
-          icon: 'success',
-          title: 'Berhasil di copy 👍',
-          showConfirmButton: false,
-          timer: 1500
+      if (copyBtn && rekeningEl) {
+        copyBtn.addEventListener("click", async () => {
+          try {
+            await navigator.clipboard.writeText(rekeningEl.innerText.trim());
+            if (window.Swal) {
+              Swal.fire({
+                icon: "success",
+                title: "Berhasil di copy 👍",
+                showConfirmButton: false,
+                timer: 1500
+              });
+            } else {
+              alert("Berhasil di copy 👍");
+            }
+          } catch (err) {
+            console.error("Clipboard error:", err);
+            if (window.Swal) {
+              Swal.fire({ icon: "error", title: "Gagal menyalin", text: err?.message || "" });
+            } else {
+              alert("Gagal menyalin: " + (err?.message || "Unknown error"));
+            }
+          }
         });
-      });
+      } else {
+        console.warn("copyBtn atau rekeningEl tidak ditemukan di DOM.");
+      }
+
+      // --- Inisialisasi Swiper (cek ketersediaan library) ---
+      if (typeof Swiper === "undefined") {
+        console.error("Swiper belum dimuat. Pastikan file swiper-bundle.min.js sudah ter-load.");
+      } else {
+        // slider utama
+        const mainSwiperEl = document.querySelector("#home .swiper");
+        if (mainSwiperEl) {
+          new Swiper(mainSwiperEl, {
+            loop: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false
+            },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+          });
+        } else {
+          // fallback: inisialisasi umum jika selector berbeda
+          const anySwiper = document.querySelector(".swiper");
+          if (anySwiper) {
+            new Swiper(anySwiper, {
+              loop: true,
+              autoplay: { delay: 3000, disableOnInteraction: false },
+              pagination: { el: ".swiper-pagination", clickable: true },
+              navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+            });
+          }
+        }
+
+        // slider dokumentasi modal
+        const docSwiperEl = document.querySelector(".mySwiper");
+        if (docSwiperEl) {
+          new Swiper(docSwiperEl, {
+            loop: true,
+            pagination: { el: ".swiper-pagination-doc", clickable: true },
+            navigation: { nextEl: ".swiper-next", prevEl: ".swiper-prev" }
+          });
+        }
+      }
+
+      // --- Modal dokumentasi ---
+      const modal = document.getElementById("docModal");
+      window.openModal = () => {
+        if (!modal) return console.warn("Modal dokumentasi tidak ditemukan.");
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      };
+      window.closeModal = () => {
+        if (!modal) return;
+        modal.classList.remove("flex");
+        modal.classList.add("hidden");
+      };
+
+      // --- Mobile menu toggle ---
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+      }
     });
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 3000, // 5 detik
-        disableOnInteraction: false, // tetap jalan walau user geser manual
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true, // titik pagination bisa diklik
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-    });
-
-     let modal = document.getElementById("docModal");
-
-  function openModal() {
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-  }
-
-  function closeModal() {
-    modal.classList.remove("flex");
-    modal.classList.add("hidden");
-  }
-
-  // Init Swiper
-  const swiperDocumentasi = new Swiper(".mySwiper", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination-doc",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-next",
-      prevEl: ".swiper-prev",
-    },
-  });
   </script>
 
 </body>
