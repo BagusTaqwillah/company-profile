@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moh Bagus Taqwillah</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Library for Scroll Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <span class="logo-text">GUZZ</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+        <li><a href="#skills" class="nav-link">Keahlian</a></li>
+        <li><a href="#certificates" class="nav-link">Sertifikasi</a></li>
+        <li><a href="#contact" class="nav-link">Kontak</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bottom Navigation (Mobile) -->
+  <!-- <nav class="bottom-nav">
+        <a href="#home" class="nav-item active" data-section="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#about" class="nav-item" data-section="about">
+            <i class="fas fa-user"></i>
+            <span>Tentang</span>
+        </a>
+        <a href="#experience" class="nav-item" data-section="experience">
+            <i class="fas fa-briefcase"></i>
+            <span>Kerja</span>
+        </a>
+        <a href="#skills" class="nav-item" data-section="skills">
+            <i class="fas fa-code"></i>
+            <span>Skills</span>
+        </a>
+        <a href="#contact" class="nav-item" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Kontak</span>
+        </a>
+    </nav> -->
+
+  <!-- Bottom Navigation - Mobile Only -->
+  <nav class="bottom-nav">
+    <a href="#home" class="nav-item active" data-section="home">
+      <i class="fas fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="#about" class="nav-item" data-section="about">
+      <i class="fas fa-user"></i>
+      <span>Tentang</span>
+    </a>
+
+    <a href="#experience" class="nav-item" data-section="experience">
+      <i class="fas fa-briefcase"></i>
+      <span>Pengalaman</span>
+    </a>
+
+    <a href="#skills" class="nav-item" data-section="skills">
+      <i class="fas fa-code"></i>
+      <span>Keahlian</span>
+    </a>
+
+    <a href="#certificates" class="nav-item" data-section="certificates">
+      <i class="fas fa-award"></i>
+      <span>Sertifikasi</span>
+    </a>
+
+    <a href="#contact" class="nav-item" data-section="contact">
+      <i class="fas fa-envelope"></i>
+      <span>Kontak</span>
+    </a>
+  </nav>
+
+
+  <!-- Hero Section with Image & Parallax -->
+  <section id="home" class="hero">
+    <!-- Animated Background -->
+    <div class="hero-bg-container">
+      <div class="stars"></div>
+      <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+      <!-- Parallax Background -->
+      <div class="parallax-layer layer-1"></div>
+      <div class="parallax-layer layer-2"></div>
+      <div class="parallax-layer layer-3"></div>
+
+      <!-- Lighting Effects -->
+      <div class="lighting-effects">
+        <div class="light-beam top-left"></div>
+        <div class="light-beam top-right"></div>
+        <div class="light-beam bottom-center"></div>
+        <svg class="gradient-overlay" viewBox="0 0 1000 1000">
+          <defs>
+            <radialGradient id="heroGradient" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" style="stop-color:#c9a961;stop-opacity:0.2" />
+              <stop offset="100%" style="stop-color:#0f1419;stop-opacity:0" />
+            </radialGradient>
+          </defs>
+          <rect width="1000" height="1000" fill="url(#heroGradient)" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Hero Content Grid -->
+    <div class="hero-content-wrapper">
+      <div class="container hero-content">
+        <!-- Left: Text Content -->
+        <div class="hero-text" data-aos="fade-right">
+          <div class="text-animation-wrapper">
+            <h1 class="hero-title">
+              <span class="highlight">Moh Bagus</span>
+              <span class="highlight-accent">Taqwillah</span>
+            </h1>
+            <p class="hero-subtitle">Software Engineer | Database Structure | Multifinace</p>
+            <p class="hero-description">
+              Membangun solusi scalable dengan expertise di C# .NET, DevOps, dan Cloud Architecture.
+              Berpengalaman menangani project enterprise perusahaan fintech.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+              <a href="#experience" class="btn btn-secondary">Lihat Pengalaman</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Hero Image with Lighting -->
+        <div class="hero-image-section">
+          <div class="image-container">
+            <!-- Profile Image with Lighting -->
+            <div class="profile-image-wrapper" data-aos="zoom-in">
+              <div class="profile-lighting"></div>
+              <div class="profile-image">
+                <img src="persona.jpg" alt="Moh Bagus Taqwillah"
+                  style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;align-items: center;">
+              </div>
+              <div class="image-glow"></div>
+            </div>
+
+            <!-- Floating Tech Cards -->
+            <div class="floating-card card-1" data-parallax="0.5">
+              <i class="fas fa-code-branch"></i>
+              <span>DevOps</span>
+            </div>
+            <div class="floating-card card-2" data-parallax="0.3">
+              <i class="fas fa-database"></i>
+              <span>Database</span>
+            </div>
+            <div class="floating-card card-3" data-parallax="0.7">
+              <i class="fas fa-cloud"></i>
+              <span>Cloud</span>
+            </div>
+
+            <!-- Animated Code Box -->
+            <div class="code-animation" data-parallax="0.4">
+              <div class="code-line"></div>
+              <div class="code-line"></div>
+              <div class="code-line"></div>
+            </div>
+
+            <!-- Decorative Elements -->
+            <div class="floating-sphere sphere-1"></div>
+            <div class="floating-sphere sphere-2"></div>
+            <div class="floating-sphere sphere-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-arrow">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-content">
+        <div class="about-text"  data-aos="fade-up">
+          <p>
+            Saya adalah Software Developer dengan spesialisasi DevOps dan Cloud Architecture.
+            Memiliki pengalaman lebih dari 3 tahun menangani project enterprise, terutama di bidang
+            finansial dan multifinance.
+          </p>
+          <p>
+            Passionate dalam mengoptimalkan sistem, mengimplementasikan best practices, dan
+            mengembangkan solusi yang scalable dan maintainable. Selalu eager untuk belajar
+            teknologi baru dan mengaplikasikannya dalam project nyata.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <h3>5+</h3>
+              <p>Certificates</p>
+            </div>
+            <div class="stat">
+              <h3>3+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <h3>20+</h3>
+              <p>Application Enterprise Clients</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="profile-shape">
+            <!-- <div class="profile-inner"> -->
+              <img src="kaset.jpg" alt="" srcset="" class="profile-inner"  style="border: 2px solid orange;">
+            <!-- </div> -->
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Pengalaman Profesional</h2>
+      <div class="timeline">
+        <!-- Maybank -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software Developer | Maybank Finance</h3>
+            <p class="timeline-date"></p>
+            <p class="timeline-description">
+              Menangani multiple modules dalam aplikasi fintech terkemuka:
+            </p>
+            <ul class="timeline-modules">
+              <li><i class="fas fa-check"></i> Financing Module - Implementasi sistem pembiayaan</li>
+              <li><i class="fas fa-check"></i> Accounting Module - Manajemen accounting dan ledger</li>
+              <li><i class="fas fa-check"></i> Repossession Module - Sistem repossesi aset</li>
+              <li><i class="fas fa-check"></i> Finance Module - Core finance operations</li>
+              <li><i class="fas fa-check"></i> Core System - Infrastruktur backend utama</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PT IMS -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software Developer | PT IMS</h3>
+            <p class="timeline-date"></p>
+            <p class="timeline-description">
+              Mengembangkan project internal perusahaan dengan fokus pada automation dan DevOps.
+              Implementasi deployment automation di VPS dan cloud infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <!-- Clemont & Finance Partners -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Developer | Clemont & Finance Partners</h3>
+            <p class="timeline-date"></p>
+            <p class="timeline-description">
+              Project kolaborasi dengan partner fintech: Clemont Insurance.
+              Mengintegrasikan sistem financing dan insurance management.
+            </p>
+          </div>
+        </div>
+
+        <!-- Government Projects -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Developer | Government & Educational Projects</h3>
+            <p class="timeline-date"></p>
+            <p class="timeline-description">
+              Project untuk Dinas Tenaga Kerja, Poltekes Kemenkes, dan institusi pendidikan.
+              Fokus pada web development dan database management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Keahlian & Tech Stack</h2>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3><i class="fas fa-code"></i> Backend Development</h3>
+          <div class="tech-stack">
+            <div class="tech-badge">C# .NET</div>
+            <div class="tech-badge">ASP.NET Core</div>
+            <div class="tech-badge">Entity Framework</div>
+            <div class="tech-badge">LINQ</div>
+            <div class="tech-badge">Microservices</div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3><i class="fas fa-palette"></i> Frontend Development</h3>
+          <div class="tech-stack">
+            <div class="tech-badge">HTML5</div>
+            <div class="tech-badge">CSS3</div>
+            <div class="tech-badge">JavaScript</div>
+            <div class="tech-badge">Responsive Design</div>
+            <div class="tech-badge">Radzen Blazor</div>
+            <div class="tech-badge">Framework UI</div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3><i class="fas fa-database"></i> Database & Data</h3>
+          <div class="tech-stack">
+            <div class="tech-badge">SQL Server</div>
+            <div class="tech-badge">PostgreSQL</div>
+            <div class="tech-badge">ER Diagram Design</div>
+            <div class="tech-badge">Database Migration</div>
+            <div class="tech-badge">Data Management</div>
+          </div>
+        </div>
+
+        <!-- DevOps & Cloud -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3><i class="fas fa-cloud"></i> DevOps & Cloud Infrastructure</h3>
+          <div class="tech-stack">
+            <div class="tech-badge">AWS</div>
+            <div class="tech-badge">Alibaba Cloud</div>
+            <div class="tech-badge">VPS Management</div>
+            <div class="tech-badge">Docker</div>
+            <div class="tech-badge">Linux</div>
+            <div class="tech-badge">CI/CD Pipeline</div>
+            <div class="tech-badge">IIS</div>
+          </div>
+        </div>
+
+        <!-- Domain Expertise -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3><i class="fas fa-chart-line"></i> Domain Expertise</h3>
+          <div class="tech-stack">
+            <div class="tech-badge">Multifinance Systems</div>
+            <div class="tech-badge">Finance Processes</div>
+            <div class="tech-badge">Business Flow Analysis</div>
+            <div class="tech-badge">System Integration</div>
+          </div>
+        </div>
+
+        <!-- AI & Advanced -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3><i class="fas fa-brain"></i> Advanced Technologies</h3>
+          <div class="tech-stack">
+            <div class="tech-badge">AI Agent Implementation</div>
+            <div class="tech-badge">Machine Learning</div>
+            <div class="tech-badge">API Development</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Visual -->
+      <div class="tech-stack-visual">
+        <h3 class="visual-title">Tech Stack Ecosystem</h3>
+        <svg viewBox="0 0 800 600" class="tech-diagram">
+          <!-- Backend Layer -->
+          <g class="tech-layer">
+            <circle cx="150" cy="100" r="45" class="tech-circle"></circle>
+            <text x="150" y="110" text-anchor="middle" class="tech-text">C#/.NET</text>
+          </g>
+
+          <!-- Database Layer -->
+          <g class="tech-layer">
+            <circle cx="400" cy="100" r="45" class="tech-circle"></circle>
+            <text x="400" y="110" text-anchor="middle" class="tech-text">SQL Server</text>
+          </g>
+
+          <!-- Cloud Layer -->
+          <g class="tech-layer">
+            <circle cx="650" cy="100" r="45" class="tech-circle"></circle>
+            <text x="650" y="110" text-anchor="middle" class="tech-text">Cloud</text>
+          </g>
+
+          <!-- Frontend Layer -->
+          <g class="tech-layer">
+            <circle cx="275" cy="350" r="45" class="tech-circle"></circle>
+            <text x="275" y="360" text-anchor="middle" class="tech-text">Web UI</text>
+          </g>
+
+          <!-- DevOps -->
+          <g class="tech-layer">
+            <circle cx="525" cy="350" r="45" class="tech-circle"></circle>
+            <text x="525" y="360" text-anchor="middle" class="tech-text">DevOps</text>
+          </g>
+
+          <!-- Connecting lines -->
+          <line x1="150" y1="145" x2="275" y2="305" class="tech-line"></line>
+          <line x1="400" y1="145" x2="275" y2="305" class="tech-line"></line>
+          <line x1="400" y1="145" x2="525" y2="305" class="tech-line"></line>
+          <line x1="650" y1="145" x2="525" y2="305" class="tech-line"></line>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates">
+    <div class="container">
+      <h2 class="section-title">Sertifikasi & Penghargaan</h2>
+
+      <div class="certificates-grid">
+        <!-- Certificates -->
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Masterclass C#</h3>
+          <p>Advanced C# programming techniques and best practices</p>
+          <span class="cert-badge">Professional</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>BNSP Web Development</h3>
+          <p>Sertifikat nasional kompetensi web development</p>
+          <span class="cert-badge">National</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>BNSP Data Management Staff</h3>
+          <p>Sertifikat BNSP untuk database dan data management</p>
+          <span class="cert-badge">National</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Penghargaan Poltekes Kemenkes</h3>
+          <p>Recognition untuk kontribusi dalam project pendidikan</p>
+          <span class="cert-badge">Achievement</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Blazor Radzen For UI</h3>
+          <p>Advanced Fron End programming techniques and best practices</p>
+          <span class="cert-badge">Professional</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Mari Berkolaborasi</h2>
+      <p class="contact-subtitle">
+        Siap membantu project Anda dengan expertise di development dan DevOps
+      </p>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:moh.bagus@example.com">moh.bagus@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Telepon</h3>
+              <a href="tel:+62812345678">+62 812 345 678</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Lokasi</h3>
+              <p>Indonesia</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" placeholder="Nama Anda" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Anda" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Moh Bagus Taqwillah</h3>
+          <p>Software Developer & DevOps Engineer</p>
+        </div>
+        <div class="footer-section">
+          <h3>Social Media</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Moh Bagus Taqwillah. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- AOS Library for Scroll Animations -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true
+    });
+  </script>
+</body>
+
+</html>
